@@ -1,59 +1,170 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Warehouse Inventory Management System
 
-## About Laravel
+## 1. Deskripsi Aplikasi
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Warehouse Inventory Management System merupakan aplikasi berbasis web yang dikembangkan untuk membantu pengelolaan persediaan barang pada gudang.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Aplikasi ini memudahkan administrator dalam mengelola data barang, kategori, supplier, transaksi barang masuk, transaksi barang keluar, serta memantau jumlah persediaan secara terstruktur.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 2. Tujuan Aplikasi
 
-## Learning Laravel
+- Mempermudah pengelolaan data persediaan barang.
+- Memantau jumlah stok barang secara aktual.
+- Mencatat transaksi barang masuk dan barang keluar.
+- Mengurangi risiko kesalahan pencatatan stok.
+- Menyediakan laporan persediaan dan riwayat transaksi.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 3. Teknologi yang Digunakan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Framework: Laravel 12
+- Bahasa pemrograman: PHP
+- Database: MySQL
+- Frontend: HTML, CSS, Bootstrap, Blade
+- JavaScript: Chart.js
+- Web server lokal: Laragon
+- Code editor: Visual Studio Code
 
-## Laravel Sponsors
+## 4. Fitur Aplikasi
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### A. Autentikasi
+- Login administrator.
+- Logout administrator.
+- Pembatasan akses halaman menggunakan autentikasi.
 
-### Premium Partners
+### B. Dashboard
+- Menampilkan jumlah produk.
+- Menampilkan jumlah kategori dan supplier.
+- Menampilkan total stok barang.
+- Menampilkan ringkasan transaksi.
+- Menampilkan grafik transaksi.
+- Menampilkan peringatan stok menipis.
+- Menampilkan aktivitas transaksi terbaru.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### C. Manajemen Kategori
+- Menambahkan kategori barang.
+- Mengubah data kategori.
+- Menghapus kategori.
 
-## Contributing
+### D. Manajemen Supplier
+- Menambahkan data supplier.
+- Mengubah data supplier.
+- Menghapus data supplier.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### E. Manajemen Produk
+- Menambahkan data produk.
+- Mengubah informasi produk.
+- Menghapus produk.
+- Menghubungkan produk dengan kategori dan supplier.
 
-## Code of Conduct
+### F. Transaksi Barang Masuk
+- Mencatat barang masuk.
+- Menentukan jumlah dan tanggal transaksi.
+- Memperbarui stok secara otomatis.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### G. Transaksi Barang Keluar
+- Mencatat barang keluar.
+- Memvalidasi ketersediaan stok.
+- Mengurangi stok secara otomatis.
+- Menolak transaksi apabila stok tidak mencukupi.
 
-## Security Vulnerabilities
+### H. Laporan
+- Laporan persediaan barang.
+- Laporan barang masuk.
+- Laporan barang keluar.
+- Filter laporan berdasarkan tanggal.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 5. Persyaratan Sistem
 
-## License
+- PHP 8.2 atau lebih baru.
+- Composer.
+- Node.js dan NPM.
+- MySQL.
+- Laragon atau web server yang mendukung Laravel.
+- Browser modern.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 6. Cara Instalasi
+
+1. Salin folder project ke direktori web server.
+2. Buka terminal pada folder project.
+3. Jalankan perintah:
+
+```bash
+composer install
+```
+
+4. Salin file konfigurasi:
+
+```bash
+copy .env.example .env
+```
+
+5. Buat database MySQL dengan nama:
+
+```text
+warehouse_inventory
+```
+
+6. Sesuaikan konfigurasi database pada file `.env`:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=warehouse_inventory
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+7. Generate application key:
+
+```bash
+php artisan key:generate
+```
+
+8. Jalankan migrasi database:
+
+```bash
+php artisan migrate
+```
+
+9. Install dependency frontend:
+
+```bash
+npm install
+```
+
+10. Jalankan aplikasi:
+
+```bash
+php artisan serve
+```
+
+11. Buka browser dan akses:
+
+```text
+http://127.0.0.1:8000
+```
+
+## 7. Database
+
+Database yang digunakan bernama `warehouse_inventory`, dengan tabel utama:
+
+- users
+- categories
+- suppliers
+- products
+- stock_ins
+- stock_outs
+
+Database juga memiliki tabel pendukung bawaan Laravel untuk cache dan queue.
+
+## 8. Pengguna Aplikasi
+
+Aplikasi menggunakan autentikasi administrator untuk mengakses fitur pengelolaan persediaan.
+
+Akun administrator dibuat melalui proses konfigurasi awal aplikasi.
+
+## 9. Penutup
+
+Warehouse Inventory Management System diharapkan dapat membantu proses pengelolaan persediaan barang menjadi lebih efektif, terstruktur, dan akurat melalui sistem informasi berbasis web.
